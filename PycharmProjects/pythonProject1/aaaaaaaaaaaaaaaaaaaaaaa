@@ -1,0 +1,36 @@
+def upline(t, l, s):
+    t.pendown()
+    t.left(90)
+    t.forward(l)
+    t.penup()
+    t.forward(s+s)
+    t.pendown()
+    t.forward(l)
+    t.penup()
+    t.right(90)
+
+def turnright(t, l, s):
+    t.pendown()
+    t.left(90)
+    t.forward(l)
+    t.penup()
+    t.forward(s)
+    t.right(90)
+    t.forward(s)
+    t.pendown()
+    t.forward(l)
+    t.penup()
+
+import turtle
+
+wn = turtle.Screen()
+wn.bgcolor("black")
+t = turtle.Turtle()
+t.color("dodgerblue")
+t.speed(99)
+
+
+t.hideturtle()
+wn.exitonclick()
+
+upline(t,100,50)
